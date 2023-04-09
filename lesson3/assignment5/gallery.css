@@ -13,5 +13,8 @@ figure {
 
 Once you're done, check what happens as you expand and shrink the browser window; no matter what adjustments you make, all images should fit in the window. */
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
+
+  /* 3. Every image should use the entire width of the figure elements. Modify your CSS to implement this requirement. */
+  width: 100%;
 }
