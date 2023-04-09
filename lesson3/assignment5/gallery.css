@@ -11,6 +11,9 @@ figure {
   /* 4. Reduce the width of each figure to 1/2 the width of the browser window: */
 
   width: 50%;
+
+  /* 5. At this point, the figures are narrow enough that we should be able to squeeze 2 of them in every row on the page. However, since figures are block elements, they always take up an entire row. Instead, you must convert the figure elements to inline-block. Please do so. */
+  display: inline-block;
 }
 
 /* 2. Reduce your browser window's width, if necessary, until at least one image exceeds the window width. Next, adjust the CSS to make them all fit inside the window. Don't forget that there is a margin around each figure, which should be evident when you display the page.
