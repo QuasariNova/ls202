@@ -2,3 +2,9 @@ body, main, figure, figcaption, img {
   margin: 0;
   padding: 0;
 }
+
+/* 1. After loading the page, you may notice that the images are vertically too near each other, and they're flush with the top and left edges of the window. Adjust the spacing between the figure elements and the distance between the left and right edges of the browser window to 50px to give the images some breathing room. */
+
+figure {
+  margin: 50px 50px;
+}
