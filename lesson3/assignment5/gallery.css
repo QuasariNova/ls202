@@ -6,7 +6,7 @@ body, main, figure, figcaption, img {
 /* 1. After loading the page, you may notice that the images are vertically too near each other, and they're flush with the top and left edges of the window. Adjust the spacing between the figure elements and the distance between the left and right edges of the browser window to 50px to give the images some breathing room. */
 
 figure {
-  margin: 50px 50px;
+  /* margin: 50px 50px; */
 
   /* 4. Reduce the width of each figure to 1/2 the width of the browser window: */
 
@@ -14,6 +14,11 @@ figure {
 
   /* 5. At this point, the figures are narrow enough that we should be able to squeeze 2 of them in every row on the page. However, since figures are block elements, they always take up an entire row. Instead, you must convert the figure elements to inline-block. Please do so. */
   display: inline-block;
+
+  /* 7. Returning to the problem of squeezing two images per row, the main issue we have is that we have margins to the left and right of each figure. Recall that we used margins here to satisfy our rule of thumb about choosing margins or padding. However, those margins take up space in the browser window, so we can't squeeze two 50%-width elements side by side. Instead, we need to set the left and right margins on the figure elements to 0, and redistribute that space in some other way. Give this a try now. */
+  box-sizing: border-box;
+  margin: 50px 0;
+  padding: 0 50px;
 }
 
 /* 2. Reduce your browser window's width, if necessary, until at least one image exceeds the window width. Next, adjust the CSS to make them all fit inside the window. Don't forget that there is a margin around each figure, which should be evident when you display the page.
