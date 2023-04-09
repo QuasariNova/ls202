@@ -25,3 +25,8 @@ img {
   /* 3. Every image should use the entire width of the figure elements. Modify your CSS to implement this requirement. */
   width: 100%;
 }
+
+/* 6. There's a small cosmetic issue unrelated to squeezing two images per row. Let's center the captions beneath each image: */
+figcaption {
+  text-align: center;
+}
