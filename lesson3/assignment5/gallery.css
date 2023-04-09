@@ -35,3 +35,10 @@ img {
 figcaption {
   text-align: center;
 }
+
+/* 10. You can now get rid of the outline you attached to the figure elements, and assign a pleasant background to the gallery. You can use the background image we used earlier in this lesson (https://d3jtzah944tvom.cloudfront.net/202/images/lesson_3/gradient-background.png) or one of your own. */
+
+main {
+  background-image: url("https://d3jtzah944tvom.cloudfront.net/202/images/lesson_3/gradient-background.png");
+  background-size: cover;
+}
