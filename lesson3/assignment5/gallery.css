@@ -8,3 +8,10 @@ body, main, figure, figcaption, img {
 figure {
   margin: 50px 50px;
 }
+
+/* 2. Reduce your browser window's width, if necessary, until at least one image exceeds the window width. Next, adjust the CSS to make them all fit inside the window. Don't forget that there is a margin around each figure, which should be evident when you display the page.
+
+Once you're done, check what happens as you expand and shrink the browser window; no matter what adjustments you make, all images should fit in the window. */
+img {
+  max-width: 100%;
+}
