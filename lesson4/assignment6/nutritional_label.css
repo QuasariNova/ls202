@@ -17,23 +17,8 @@ body {
 article {
   box-sizing: border-box;
   border: 4px solid black;
-  padding: 8px 6px;
+  padding: 8px 10px;
   width: 684px;
-
-  /* This is here to help position elements */
-  display: inline-block;
-  position: absolute;
-  top: 10px;
-}
-
-/* div and img tags for positioning */
-div {
-  display: inline-block;
-  width: 684px;
-}
-
-img {
-  display: block;
 }
 
 h1 {
@@ -42,8 +27,7 @@ h1 {
 }
 
 section {
-  margin: 0 4px;
-  border-bottom: 30px solid black;
+  border-bottom: 29px solid black;
 }
 
 p {
@@ -60,12 +44,13 @@ table {
 }
 
 thead {
-  border-bottom: 13px solid black;
+  border-bottom: 12px solid black;
 }
 
 td, th {
   border-top: 1px solid gray;
-  padding: 12px 0
+  padding: 12px 0;
+  text-align: left;
 }
 
 td {
@@ -77,8 +62,9 @@ th {
   font-family: 'Franklin Gothic Heavy', Arial, sans-serif;
 }
 
+/* padding fixes for % daily value table */
 tbody td, tbody th {
-  padding: 15px 0 8.5px 0;
+  padding: 13px 0 9px;
 }
 
 /* Text on the right side of the table is aligned right */
@@ -87,24 +73,43 @@ td:last-child, th:last-child {
 }
 
 /* the next three are for making sure indents in table appear correctly */
-tr.indent + tr td:first-child {
-  border-top-width: 0;
-}
-
 tr.indent td:first-child {
   width: 40px;
   border-top-width: 0;
 }
 
-tr.indent td:nth-child(n+2) {
+/* In addition to drawing top, draw bottom on all but first cell on indented row */
+.indent td + td {
   border-bottom: 1px solid black;
 }
 
-/* To make sure that we dont add a line at the top of a table */
-tr:first-child td, tr:first-child th {
+/* Remove border of first cell on row below indented row */
+tr.indent + tr td:first-child {
   border-top-width: 0;
 }
 
+/* padding fixes for vitamin table */
+footer table td {
+  padding: 16px 0 8px;
+}
+
+/* The next two are to configure the table at the bottom correctly */
+footer table:last-of-type td {
+  font-size: .75rem;
+  padding: 8px 0 3px;
+
+  /* all text is aligned left. This is more specific than previous one making last cell in row right aligned. (0, 1, 3) vs (0, 1, 1) */
+  text-align: left;
+  /* no borders on bottom table save one line */
+  border-width: 0;
+}
+
+/* bottom table has one border above second row */
+footer table:last-of-type tr:nth-child(2) td {
+  border-top-width: 1px;
+}
+
+/* next three are to format the reference */
 dl {
   border-top: 1px solid black;
   padding-top: 10px;
@@ -116,7 +121,7 @@ dt {
 
   /* I don't know how to get the * to be on the top another way */
   position: relative;
-  top: -50px;
+  top: -65px;
 }
 
 dd {
