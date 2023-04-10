@@ -5,30 +5,53 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 34px;
   font-family: Helvetica, Arial, sans-serif;
+}
+
+/* So we can see the border to our article well */
+body {
+  padding: 10px;
 }
 
 article {
   box-sizing: border-box;
-  border: 2px solid white;
-  padding: 5.5px 2.5px;
-  width: 342px;
-  height: 671px;
+  border: 4px solid black;
+  padding: 8px 6px;
+  width: 684px;
+
+  /* This is here to help position elements */
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+}
+
+/* div and img tags for positioning */
+div {
+  display: inline-block;
+  width: 684px;
+}
+
+img {
+  display: block;
 }
 
 h1 {
   font-family: 'Franklin Gothic Heavy', Arial, sans-serif;
-  font-size: 2.32rem;
+  font-size: 2.6rem;
 }
 
 section {
   margin: 0 4px;
-  border-bottom: 15px solid white;
+  border-bottom: 30px solid black;
 }
 
 p {
-  margin: 5.5px 0;
+  padding: 9px 0;
+}
+
+strong {
+  font-family: 'Franklin Gothic Heavy', Arial, sans-serif;
 }
 
 table {
@@ -36,28 +59,68 @@ table {
   border-collapse: collapse;
 }
 
+thead {
+  border-bottom: 13px solid black;
+}
+
 td, th {
   border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-  padding: 6px 0
+  padding: 12px 0
+}
+
+td {
+  font-size: .93rem;
 }
 
 th {
   font-size: .76rem;
+  font-family: 'Franklin Gothic Heavy', Arial, sans-serif;
 }
 
-th:first-child {
-  text-align: left;
+tbody td, tbody th {
+  padding: 15px 0 8.5px 0;
 }
 
-td:last-child {
+/* Text on the right side of the table is aligned right */
+td:last-child, th:last-child {
   text-align: right;
 }
 
-tr:first-child th {
-  border-top: 0 solid white;
+/* the next three are for making sure indents in table appear correctly */
+tr.indent + tr td:first-child {
+  border-top-width: 0;
 }
 
-tr:last-child td {
-  border-bottom: 0 solid white;
+tr.indent td:first-child {
+  width: 40px;
+  border-top-width: 0;
+}
+
+tr.indent td:nth-child(n+2) {
+  border-bottom: 1px solid black;
+}
+
+/* To make sure that we dont add a line at the top of a table */
+tr:first-child td, tr:first-child th {
+  border-top-width: 0;
+}
+
+dl {
+  border-top: 1px solid black;
+  padding-top: 10px;
+  font-size: .75rem;
+}
+
+dt {
+  display: inline-block;
+
+  /* I don't know how to get the * to be on the top another way */
+  position: relative;
+  top: -50px;
+}
+
+dd {
+  display: inline-block;
+  width: 97%;
+  line-height: 1.25em;
 }
