@@ -3,6 +3,7 @@
   <head>
     <title>Contact Form</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="contact_form.html">
   </head>
   <body>
     <!-- 1. Create a web page that contains a contact form. Using your newly acquired knowledge, create the label and input fields for a first name, last name, email address, city, state, and zip code. Each input field can appear on a separate line. -->
@@ -105,7 +106,7 @@
             <label for="zip-code">Zip Code</label>
           </dt>
           <dd>
-            <input type="text" name="zip-code" id="zip-code" pattern="[0-9]{5}" placeholder="#####" size="5" required>
+            <input type="number" name="zip-code" id="zip-code" pattern="[0-9]{5}" placeholder="#####" required>
           </dd>
         </dl>
 
@@ -221,9 +222,15 @@
         </ul>
 
         <!-- 6. Add the most important part of a contact form: a comment box that lets the user enter several lines or paragraphs of text. Be sure the comment box displays up to around 6 rows and 80 columns of text but also scrolls as needed if the user enters more than that. -->
-        <label for="comment">Comments</label>
+        <dl>
+          <dt>
+            <label for="comment">Comments</label>
+          </dt>
+          <dd>
+            <textarea name="comment" id="comment" rows="6" cols="80" placeholder="Type message here" required></textarea>
+          </dd>
+        </dl>
 
-        <textarea name="comment" id="comment" rows="6" cols="80" placeholder="Type message here" required></textarea>
 
         <!-- 7. When the user clicks the submit button, the browser should send a timestamp to the server along with the other form data. Since we don't have a way to determine the date with HTML and CSS alone, you can use a constant value like today's date, e.g., 2018-02-17 (year-month-day). The form should have an input tag for the timestamp, but the browser should not display it to the user; you can use type="hidden" for this control. -->
         <input type="hidden" name="date" value="2023-04-11">
