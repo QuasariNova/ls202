@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- 7. Create a search form with three items:
+
+    a field for the search term,
+    a group of three controls to select precisely one from the list "TV," "Movies," and "Music,"
+    a Search button (use the button tag, not the obsolete <input type="button"> tag).
+
+The form doesn't have to do anything when submitted. Don't use a description list for this problem. -->
+<html lang="en">
+  <head>
+    <title>Problem 7</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <form action="#" method="get">
+      <fieldset>
+        <label for="search-term">Search for</label>
+        <input type="search" name="search-term" id="search-term">
+
+        <label>
+          <input type="radio" name="search-group" value="tv" required>
+          TV
+        </label>
+
+        <label>
+          <input type="radio" name="search-group" value="movies" required>
+          Movies
+        </label>
+
+        <label>
+          <input type="radio" name="search-group" value="music" required>
+          Music
+        </label>
+
+        <button name="search">Search</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
