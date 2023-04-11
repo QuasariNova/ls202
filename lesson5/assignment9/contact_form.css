@@ -8,6 +8,7 @@ fieldset {
   margin: 0 auto;
   border: none;
 }
+
 dt{
   margin-bottom: 5px;
 }
@@ -40,13 +41,27 @@ ul {
 }
 
 /* 2. Put the first and last name fields on the same line. Each of the inputs should take up 50% of the form's width, counting any padding or margins. */
-.name {
+.partial {
   display: inline-block;
   box-sizing: border-box;
+}
+
+.name {
   width: 50%;
   padding-right: 5px;
 }
 
 .name + .name {
   padding: 0 0 0 5px;
+}
+
+/* 3. Put the final three address fields on the same line. The city should consume 50% of the available width, the state 10%, and the zip code 40%. */
+.state {
+  width: 10%;
+  padding: 0 5px;
+}
+
+.zip-code {
+  width: 40%;
+  padding-left: 5px;
 }

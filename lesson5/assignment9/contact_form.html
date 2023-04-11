@@ -11,7 +11,7 @@
     <form action="#" method="post">
       <fieldset>
         <!-- 2. Put the first and last name fields on the same line. Each of the inputs should take up 50% of the form's width, counting any padding or margins. -->
-        <dl class="name">
+        <dl class="partial name">
           <dt>
             <label for="first-name">First Name</label>
           </dt>
@@ -20,7 +20,7 @@
           </dd>
         </dl><!--
 
-     --><dl class="name">
+     --><dl class="partial name">
           <dt>
             <label for="last-name">Last Name</label>
           </dt>
@@ -38,7 +38,8 @@
           </dd>
         </dl>
 
-        <dl>
+        <!-- 3. Put the final three address fields on the same line. The city should consume 50% of the available width, the state 10%, and the zip code 40%. -->
+        <dl class="partial name">
           <dt>
             <label for="city">City</label>
           </dt>
@@ -47,7 +48,7 @@
           </dd>
         </dl><!--
 
-     --><dl>
+     --><dl class="partial state">
           <dt>
             <label for="state">State</label>
           </dt>
@@ -108,7 +109,7 @@
           </dd>
         </dl><!--
 
-     --><dl>
+     --><dl class="partial zip-code">
           <dt>
             <label for="zip-code">Zip Code</label>
           </dt>
