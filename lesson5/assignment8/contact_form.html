@@ -24,11 +24,13 @@
             <input type="text" name="last-name" id="last-name" required>
           </dd>
 
+          <!-- Use the most appropriate input type for the email and zip code inputs, along with a placeholder attribute that shows an example of a properly formatted email address and Zip Code. (There is no "zipcode" input type; use another input type.) Since Zip Codes always have five digits (we'll ignore Zip+4), you should also set a maximum length for this input. See if you can figure out how to require exactly 5 digits. -->
+
           <dt>
             <label for="email">E-mail Address</label>
           </dt>
           <dd>
-            <input type="email" name="email" id="email" required>
+            <input type="email" name="email" id="email" placeholder="email@example.com" required>
           </dd>
 
           <dt>
@@ -102,7 +104,7 @@
             <label for="zip-code">Zip Code</label>
           </dt>
           <dd>
-            <input type="text" name="zip-code" id="zip-code" required>
+            <input type="text" name="zip-code" id="zip-code" pattern="[0-9]{5}" placeholder="#####" size="5" required>
           </dd>
         </dl>
       </fieldset>
