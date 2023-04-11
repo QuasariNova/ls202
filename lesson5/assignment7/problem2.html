@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- 2. Convert the HTML from the previous problem to use a single description list to pair each label and input control. -->
+<html lang="en">
+  <head>
+    <title>Problem 2</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <dl>
+          <dt>
+            <label for="first-name">First Name</label>
+          </dt>
+          <dd>
+            <input type="text" name="first-name" id="first-name" required>
+          </dd>
+
+          <dt>
+            <label for="last-name">Last Name</label>
+          </dt>
+          <dd>
+            <input type="text" name="last-name" id="last-name" required>
+          </dd>
+
+          <dt>
+            <label for="email">E-mail Address</label>
+          </dt>
+          <dd>
+            <input type="email" name="email" id="email" placeholder="email@example.com" autocomplete="off" autocapitalize="none" autocorrect="off" required>
+          </dd>
+
+          <dt>
+            <label for="phone">Phone Number</label>
+          </dt>
+          <dd>
+            <input type="tel" name="phone" id="phone" placeholder="XXX-XXX-XXXX" required>
+          </dd>
+        </dl>
+
+        <input type="submit" value="Send">
+      </fieldset>
+    </form>
+  </body>
+</html>
