@@ -38,3 +38,15 @@ ul {
   list-style: none;
   font-size: 14px;
 }
+
+/* 2. Put the first and last name fields on the same line. Each of the inputs should take up 50% of the form's width, counting any padding or margins. */
+.name {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 50%;
+  padding-right: 5px;
+}
+
+.name + .name {
+  padding: 0 0 0 5px;
+}

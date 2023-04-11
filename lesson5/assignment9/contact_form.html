@@ -10,7 +10,8 @@
     <!-- 1. Since we want to treat each input in the form differently, we should use separate description lists for each field. Adjust the HTML to use a description list to pair the label and input elements.-->
     <form action="#" method="post">
       <fieldset>
-        <dl>
+        <!-- 2. Put the first and last name fields on the same line. Each of the inputs should take up 50% of the form's width, counting any padding or margins. -->
+        <dl class="name">
           <dt>
             <label for="first-name">First Name</label>
           </dt>
@@ -19,7 +20,7 @@
           </dd>
         </dl><!--
 
-     --><dl>
+     --><dl class="name">
           <dt>
             <label for="last-name">Last Name</label>
           </dt>
