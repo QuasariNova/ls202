@@ -132,7 +132,7 @@
             <label for="web-tech">Which web technologies do you want to learn?</label>
           </dt>
           <dd>
-            <select name="web-tech" id="web-tech" multiple size="7">
+            <select name="web-tech" id="web-tech" multiple size="7" required>
               <option value="html">HTML</option>
               <option value="css">CSS</option>
               <option value="javascript">Javascript</option>
@@ -148,12 +148,16 @@
             <label for="comment">Comments</label>
           </dt>
           <dd>
-            <textarea name="comment" id="comment" rows="6" cols="80" placeholder="Type message here"></textarea>
+            <textarea name="comment" id="comment" rows="6" cols="80" placeholder="Type message here" required></textarea>
           </dd>
         </dl>
 
         <!-- 7. When the user clicks the submit button, the browser should send a timestamp to the server along with the other form data. Since we don't have a way to determine the date with HTML and CSS alone, you can use a constant value like today's date, e.g., 2018-02-17 (year-month-day). The form should have an input tag for the timestamp, but the browser should not display it to the user; you can use type="hidden" for this control. -->
         <input type="hidden" name="date" value="2023-04-11">
+
+        <!-- 8. Add a submit input to create a button with the name Send. You should also include a reset button so the user can clear the form and start over. -->
+        <input type="submit" value="Send">
+        <input type="reset">
       </fieldset>
     </form>
   </body>
