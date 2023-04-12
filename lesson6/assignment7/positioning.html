@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <!-- For these problems, create a simple HTML page with a few paragraphs of text. You should have enough content that you must scroll the browser window to read the bottommost content; you can also shorten the window height if you prefer. If you add any elements to the page, add them after the paragraph elements. -->
+
+<!-- 1. Starting with a new document, create an element and position it at the top right of the page. It should scroll with the rest of the window when you scroll. -->
 <html lang="en">
   <head>
     <title>your page title goes here</title>
     <meta charset="utf-8">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        border: 8px solid gray;
+      }
+
+      #positioned {
+        box-sizing: border-box;
+        padding: 1rem;
+        background-color: palegoldenrod;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    </style>
   </head>
   <body>
     <main>
@@ -87,5 +108,8 @@
         Cras porta mollis tincidunt. Praesent eu porttitor libero. Proin pretium nulla sit amet ante sodales suscipit vitae ac tellus. Aenean lobortis convallis massa. Etiam at metus arcu. In et finibus odio. Pellentesque porta elit sed dolor imperdiet, at mollis metus scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
       </p>
     </main>
+    <aside id="positioned">
+      <p>I'm positioned!</p>
+    </aside>
   </body>
 </html>
