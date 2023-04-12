@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- 1. Create a section element with a fixed width of 750px, and horizontally center it on the page using CSS margins. Create two columns inside it, a 500px-wide article and a 250px-wide aside, positioned side by side with CSS floats. The left column should contain the article. Each column should have 1rem of whitespace between the text and edges of the container. Add some background colors to the body, section, article, and aside so you can see the boundaries of each element. -->
+<html lang="en">
+  <head>
+    <title>Problem 1</title>
+    <meta charset="utf-8">
+    <style>
+      body, section, article, aside {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      section {
+        width: 750px;
+        margin: 0 auto;
+        background-color: gray;
+      }
+
+      article, aside {
+        box-sizing: border-box;
+        float: left;
+        padding: 1rem;
+      }
+
+      article {
+        width: 500px;
+        background-color: palegoldenrod;
+      }
+
+      aside {
+        width: 250px;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>
+        <p>
+          Fusce mollis lorem sed feugiat fringilla. Integer ut ligula mattis, euismod tortor rutrum, commodo neque. Integer tristique justo a felis euismod, quis porttitor mauris pellentesque. Morbi nec malesuada mi. Ut lorem risus, dapibus eu nisl nec, rutrum dapibus nisi. Etiam pellentesque vitae arcu ac imperdiet. Duis iaculis, ligula nec fringilla luctus, elit ex venenatis purus, vulputate dictum ligula quam at ante. Phasellus laoreet pulvinar sagittis. Mauris congue quis erat aliquam interdum. Morbi metus arcu, placerat non tempus suscipit, efficitur vitae est. Nam efficitur mattis magna interdum porta.
+        </p>
+
+        <p>
+          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ut massa a leo semper ultrices at ut erat. Integer ultricies tempor nisi in tempus. Nam hendrerit fermentum mauris eget pharetra. Nulla sit amet est velit. Fusce fringilla vestibulum justo, eget fermentum dui euismod in. Donec interdum facilisis mi, nec imperdiet elit. In sollicitudin, ipsum faucibus convallis blandit, odio erat viverra mi, at placerat dolor tellus sit amet mauris. Praesent ut pharetra massa. Duis feugiat dolor ut vulputate porta. Cras ornare cursus lorem, in imperdiet tortor pretium sed.
+        </p>
+
+        <p>
+          Mauris in enim sem. Nunc placerat magna ut nisi ultrices fringilla. Ut orci diam, convallis ac fermentum quis, efficitur sit amet neque. Nulla purus metus, congue in nisi id, lacinia luctus felis. Mauris eget maximus magna. Aliquam finibus dui nec rutrum laoreet. Praesent ut ultrices metus. Nulla sit amet consequat ipsum, vitae blandit massa. Nunc quis elit augue. Morbi risus ante, ultricies id ante nec, dictum ultricies magna. Curabitur ipsum odio, vulputate ac consectetur lobortis, convallis id ex. Proin quis velit a lectus congue pulvinar id vitae tortor. Praesent eget scelerisque eros.
+        </p>
+
+        <p>
+          Vestibulum ultricies posuere nulla eu imperdiet. Nam vitae augue feugiat, euismod lorem quis, hendrerit elit. Quisque lectus nunc, cursus id placerat in, vehicula non nisi. Aenean eget lorem at metus interdum tristique. Etiam risus mauris, lobortis vitae feugiat vel, suscipit commodo ex. Fusce eget eros sit amet sem elementum condimentum placerat sit amet velit. Nulla facilisi. Etiam pellentesque, ex nec placerat ultricies, nisl sem malesuada nunc, sed ornare metus dolor in erat. Etiam imperdiet lorem faucibus arcu efficitur pellentesque. Quisque tincidunt volutpat risus, sit amet consectetur erat semper vitae. Curabitur sapien quam, sagittis vitae dui vitae, imperdiet dictum mi. Phasellus id hendrerit magna. Nulla efficitur ex eros, at sollicitudin dui hendrerit non. Quisque quis tellus cursus, cursus ipsum a, porttitor lorem.
+        </p>
+
+        <p>
+          Suspendisse congue ligula ut congue venenatis. Duis placerat, nisi vel facilisis egestas, ante magna porta ex, vel porta lorem ex ut ligula. Sed consectetur volutpat urna, et condimentum purus mollis vitae. Sed et enim nibh. Suspendisse laoreet ut est at dignissim. Pellentesque consequat, ipsum vitae ullamcorper aliquet, mi est venenatis nibh, id iaculis tellus lorem et eros. Pellentesque sit amet nibh auctor, aliquet lacus in, porttitor justo. Mauris et diam vel ex eleifend cursus vulputate quis sapien. Aliquam et fermentum nibh. Donec ac dolor tincidunt, convallis purus ut, molestie nibh. Nullam leo dui, porta ac ipsum ac, varius facilisis augue. Nam metus nulla, efficitur vitae diam sed, laoreet hendrerit erat. Vestibulum at massa a purus suscipit efficitur. Quisque semper et justo nec lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed at sapien leo.
+        </p>
+      </article>
+      <aside>
+        <p>
+          Morbi finibus lacinia sapien, eu tempus dui commodo vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. In ultricies lacus lectus, ac tincidunt mi consequat et. Phasellus mollis magna ac lorem mollis auctor. Curabitur commodo turpis augue, a semper augue molestie sed. Integer laoreet pretium elementum. Mauris nec est ultricies, tempus velit vitae, facilisis massa. Aliquam iaculis venenatis fermentum. Integer vel lorem eu arcu gravida vulputate vehicula sit amet mi.
+        </p>
+
+        <p>
+          Donec fermentum ipsum in semper pretium. Curabitur vulputate ante libero, in fermentum augue aliquam et. Integer nisl erat, dapibus sed eleifend quis, iaculis a mauris. Nulla laoreet eros nec eros rutrum, nec sollicitudin sapien convallis. Fusce luctus lorem quam, et vestibulum ante convallis congue. Donec vitae molestie augue, nec gravida nisl. Integer mattis purus vitae erat sodales, a aliquet erat aliquet. Aenean sodales semper sem eu vulputate. Donec varius sit amet nulla a rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        </p>
+      </aside>
+    </section>
+  </body>
+</html>
