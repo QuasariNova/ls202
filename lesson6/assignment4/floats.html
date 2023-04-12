@@ -16,8 +16,10 @@
 
       /* 2. If necessary, add some more text to the article to ensure it is noticeably taller than the aside. Can you see the background color you set on the section element? Why not? What can you add to your CSS to fix it? */
 
+      /* 3.Remove the fixed width of 750px from the section and set a maximum width of 1000px instead. Modify the right column to take up the remainder of the space without floating the column or giving it a specific width. */
+
       section {
-        width: 750px;
+        max-width: 1000px;
         margin: 0 auto;
         background-color: gray;
         overflow: hidden;
@@ -25,17 +27,18 @@
 
       article, aside {
         box-sizing: border-box;
-        float: left;
+        /* float: left; */
         padding: 1rem;
       }
 
       article {
+        float: left;
         width: 500px;
         background-color: palegoldenrod;
       }
 
       aside {
-        width: 250px;
+        /* width: 250px; */
         background-color: lightgreen;
       }
     </style>
