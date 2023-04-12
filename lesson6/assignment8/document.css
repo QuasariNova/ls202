@@ -1,0 +1,67 @@
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+main {
+  padding: 20px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+h1, h2, h3 {
+  color: #ce4a4a;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+a {
+  color: black;
+}
+
+.example {
+  border: 2px dashed black;
+  padding: 30px;
+  margin: 45px;
+  width: 650px;
+}
+
+.marg-in a {
+  margin: 30px;
+}
+
+.pad-in a, .flo-in a {
+  background-color: green;
+  border: 1px solid darkgreen;
+  color: white;
+  padding: 30px;
+}
+
+.flo-in a {
+  float: left;
+  margin: 0 15px;
+}
+
+.flo-in::before {
+  display: block;
+  content: "";
+}
+
+.flo-in::after {
+  display: block;
+  clear: both;
+  content: "";
+}

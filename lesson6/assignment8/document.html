@@ -3,6 +3,7 @@
   <head>
     <title>Positioning</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="document.css">
   </head>
   <body>
     <main>
@@ -18,9 +19,9 @@
         <h2>Anchor tags are inline elements: they take up the width required by their content and not the entire width of the page.</h2>
 
         <section class="example">
-          <a>Home</a>
-          <a>Portfolio</a>
-          <a>Contact</a>
+          <a href="#">Home</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
         </section>
 
         <h2>What happens when we set a margin on an inline-level element?</h2>
@@ -29,20 +30,20 @@
           Inline elements ignore top and bottom margins but observe the left and right margins.
         </p>
 
-        <section class="example">
-          <a class="margin">Home</a>
-          <a class="margin">Portfolio</a>
-          <a class="margin">Contact</a>
+        <section class="example marg-in">
+          <a href="#">Home</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
         </section>
 
         <p>In the above example, we requested a margin of 30px on all sides. However, the browser ignored the top and bottom margins.</p>
 
         <h2>What about padding?</h2>
 
-        <section class="example">
-          <a class="padding">Home</a>
-          <a class="padding">Portfolio</a>
-          <a class="padding">Contact</a>
+        <section class="example pad-in">
+          <a href="#">Home</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
         </section>
 
         <p>
@@ -51,10 +52,10 @@
 
         <h2>Floating Inline Elements</h2>
 
-        <section class="example">
-          Home
-          Portfolio
-          Contact
+        <section class="example flo-in">
+          <a href="#">Home</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
         </section>
 
         <p>
