@@ -6,6 +6,8 @@
 <!-- 4. Place a new element between the page contents and the yellow item; by between, we mean in a 3D sense. Consider the page content to be at the bottom of a stack and the yellow at the top; place the new element between the two.
 
 The new element should take up the full width and height of the page. Use the CSS below to get started; note that it sets the background to a translucent color. The new element should fill the browser's entire window, and it should appear in front of the paragraphs but behind the yellow box. -->
+
+<!-- 5. Create a new element inside the #positioned container. Starting with the CSS below, move the new item partially outside the parent's boundaries by 10px to the left and top. To ensure you can see everything, move the parent element down from the top of the page. -->
 <html lang="en">
   <head>
     <title>Positioning.</title>
@@ -31,7 +33,7 @@ The new element should take up the full width and height of the page. Use the CS
         width: 400px;
         margin-left: -200px;
         position: fixed;
-        top: 0;
+        top: 20px;
         left: 50%;
         z-index: 2;
       }
@@ -44,6 +46,16 @@ The new element should take up the full width and height of the page. Use the CS
         right: 0;
         background-color: rgba(0, 0, 0, .6);
         z-index: 1;
+      }
+
+      #child {
+        /* code omitted */
+        background-color: pink;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: -10px;
+        left: -10px;
       }
     </style>
   </head>
@@ -131,6 +143,7 @@ The new element should take up the full width and height of the page. Use the CS
     </main>
     <aside id="positioned">
       <p>I'm positioned!</p>
+      <div id="child"></div>
     </aside>
     <div id="hidden"></div>
   </body>
