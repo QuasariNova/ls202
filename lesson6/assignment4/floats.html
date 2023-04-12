@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <!-- 1. Create a section element with a fixed width of 750px, and horizontally center it on the page using CSS margins. Create two columns inside it, a 500px-wide article and a 250px-wide aside, positioned side by side with CSS floats. The left column should contain the article. Each column should have 1rem of whitespace between the text and edges of the container. Add some background colors to the body, section, article, and aside so you can see the boundaries of each element. -->
+
+<!-- 5. Add a footer below the two columns. -->
 <html lang="en">
   <head>
     <title>Problem 1</title>
@@ -25,7 +27,7 @@
         overflow: hidden;
       }
 
-      article, aside {
+      article, aside, footer {
         box-sizing: border-box;
         /* float: left; */
         padding: 1rem;
@@ -42,6 +44,11 @@
       aside {
         /* width: 250px; */
         background-color: lightgreen;
+      }
+
+      footer {
+        background-color:lightcoral;
+        clear: both;
       }
     </style>
   </head>
@@ -77,6 +84,11 @@
           Donec fermentum ipsum in semper pretium. Curabitur vulputate ante libero, in fermentum augue aliquam et. Integer nisl erat, dapibus sed eleifend quis, iaculis a mauris. Nulla laoreet eros nec eros rutrum, nec sollicitudin sapien convallis. Fusce luctus lorem quam, et vestibulum ante convallis congue. Donec vitae molestie augue, nec gravida nisl. Integer mattis purus vitae erat sodales, a aliquet erat aliquet. Aenean sodales semper sem eu vulputate. Donec varius sit amet nulla a rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
         </p>
       </aside>
+      <footer>
+        <p>
+          Aenean consectetur aliquam turpis, quis ultrices mauris interdum at. Pellentesque quis nisi id massa vestibulum fermentum eu id sapien. Nulla feugiat ligula ipsum, sollicitudin dignissim nunc suscipit sed. Cras ullamcorper at diam eu dapibus. Suspendisse id placerat risus. In efficitur mi nulla. Praesent ut tellus non quam elementum finibus. Etiam elementum libero ipsum, volutpat consequat arcu laoreet in. Quisque viverra orci eget elit vehicula elementum. Praesent mauris orci, scelerisque vel orci sed, hendrerit dignissim odio. Donec non justo non arcu pretium lacinia id ut ligula. Proin tincidunt ipsum a aliquet malesuada. Maecenas posuere nisl dolor, nec consequat lacus ullamcorper vitae. Fusce nibh justo, iaculis ac velit in, efficitur pulvinar ante. Pellentesque commodo a nisi sit amet sollicitudin.
+        </p>
+      </footer>
     </section>
   </body>
 </html>
