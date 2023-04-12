@@ -55,13 +55,90 @@ a {
   margin: 0 15px;
 }
 
-.flo-in::before {
+.container::before {
   display: block;
   content: "";
 }
 
-.flo-in::after {
-  display: block;
+.container::after {
   clear: both;
+  display: block;
   content: "";
+}
+
+div {
+  color: white;
+  box-sizing: border-box;
+}
+
+.block-1 {
+  background-color: dodgerblue;
+}
+
+.block-2,
+.block-4 {
+  padding: 20px;
+  margin: 20px;
+}
+
+.block-2 {
+  background-color: green;
+  height: 60px;
+}
+
+.block-3 {
+  width: 90px;
+  background-color: tomato;
+}
+
+.block-4 {
+  background-color: pink;
+  width: 180px;
+  height: 120px;
+}
+
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: right;
+}
+
+.box {
+  border: 1px solid red;
+}
+
+.box.float-l {
+  background-color: blue;
+}
+
+.box.float-r {
+  background-color: tomato;
+}
+
+.f-box {
+  text-align: center;
+  height:70px;
+  line-height: 70px;
+}
+
+.f-box.float-l {
+  background-color: tomato;
+  width: 40%;
+}
+
+.f-box.float-r {
+  background-color: dodgerblue;
+  width: 50%;
+}
+
+.a-box a {
+  color: white;
+  background-color: dodgerblue;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
 }

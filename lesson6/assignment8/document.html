@@ -52,7 +52,7 @@
 
         <h2>Floating Inline Elements</h2>
 
-        <section class="example flo-in">
+        <section class="example flo-in container">
           <a href="#">Home</a>
           <a href="#">Portfolio</a>
           <a href="#">Contact</a>
@@ -112,12 +112,14 @@
 
         <h3>Floating block elements with no width or height</h3>
 
-        <div class="float-l">
-          Box - 1 - Floated Left
-        </div>
+        <div class="container">
+          <div class="float-l box">
+            Box - 1 - Floated Left
+          </div>
 
-        <div class="float-r">
-          Box - 2 - Floated Right
+          <div class="float-r box">
+            Box - 2 - Floated Right
+          </div>
         </div>
 
         <p>
@@ -126,12 +128,15 @@
 
         <h3>Floating block elements with width and height set.</h3>
 
-        <div class="float-l f-box">
+        <div class="container">
+          <div class="float-l f-box">
           Box - 1 - Floated Left
+          </div>
+          <div class="float-r f-box">
+            Box - 2 - Floated Right
+          </div>
         </div>
-        <div class="float-r f-box">
-          Box - 2 - Floated Right
-        </div>
+
 
         <p>
           When you specify the widths on floated block-level elements, the browser will observe the widths. In the above example, our blocks have widths of 40% and 50%.
@@ -143,9 +148,11 @@
           Let's use the anchor tag as an example.
         </p>
 
-          <a class="a-box">Home</a>
-          <a class="a-box">About</a>
-          <a class="a-box"> Contact</a>
+        <div class="a-box">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#"> Contact</a>
+        </div>
 
         <p>
           Yes, we can change a block element to an inline and vice versa. You can change the display property regardless of the previous value.
