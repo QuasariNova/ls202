@@ -2,9 +2,13 @@
 <!-- For these problems, create a simple HTML page with a few paragraphs of text. You should have enough content that you must scroll the browser window to read the bottommost content; you can also shorten the window height if you prefer. If you add any elements to the page, add them after the paragraph elements. -->
 
 <!-- 1. Starting with a new document, create an element and position it at the top right of the page. It should scroll with the rest of the window when you scroll. -->
+
+<!-- 4. Place a new element between the page contents and the yellow item; by between, we mean in a 3D sense. Consider the page content to be at the bottom of a stack and the yellow at the top; place the new element between the two.
+
+The new element should take up the full width and height of the page. Use the CSS below to get started; note that it sets the background to a translucent color. The new element should fill the browser's entire window, and it should appear in front of the paragraphs but behind the yellow box. -->
 <html lang="en">
   <head>
-    <title>your page title goes here</title>
+    <title>Positioning.</title>
     <meta charset="utf-8">
     <style>
       body {
@@ -29,6 +33,17 @@
         position: fixed;
         top: 0;
         left: 50%;
+        z-index: 2;
+      }
+
+      #hidden {
+        position:fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .6);
+        z-index: 1;
       }
     </style>
   </head>
@@ -117,5 +132,6 @@
     <aside id="positioned">
       <p>I'm positioned!</p>
     </aside>
+    <div id="hidden"></div>
   </body>
 </html>
