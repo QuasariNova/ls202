@@ -134,11 +134,17 @@ div {
   width: 50%;
 }
 
+.nav,
+.centered,
+.nav a,
+.a-box a {
+  text-align: center;
+}
+
 .a-box a,
 .nav a {
   color: white;
   background-color: dodgerblue;
-  text-align: center;
   box-sizing: border-box;
 }
 
@@ -146,10 +152,6 @@ div {
   margin: 10px;
   padding: 10px;
   display: block;
-}
-
-.nav {
-  text-align: center;
 }
 
 .nav a {
@@ -161,4 +163,28 @@ div {
 
 .i-block {
   border-bottom: 2px dashed black;
+}
+
+.half {
+  width: 50%;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+}
+
+.half.float-l {
+  background-color: tomato;
+}
+
+.half.float-r {
+  background-color: dodgerblue;
+}
+
+.clear {
+  content: "";
+  clear: both;
+  background-color: green;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
 }
