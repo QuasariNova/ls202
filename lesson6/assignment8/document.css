@@ -30,6 +30,7 @@ h3 {
 
 a {
   color: black;
+  text-decoration: none;
 }
 
 .example {
@@ -133,12 +134,31 @@ div {
   width: 50%;
 }
 
-.a-box a {
+.a-box a,
+.nav a {
   color: white;
   background-color: dodgerblue;
-  display: block;
-  box-sizing: border-box;
   text-align: center;
+  box-sizing: border-box;
+}
+
+.a-box a {
   margin: 10px;
   padding: 10px;
+  display: block;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav a {
+  display: inline-block;
+  margin: 20px 8px 25px;
+  padding: 20px 30px;
+  width: 180px;
+}
+
+.i-block {
+  border-bottom: 2px dashed black;
 }
