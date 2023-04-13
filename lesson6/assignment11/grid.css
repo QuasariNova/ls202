@@ -105,9 +105,12 @@ footer {
   grid-template-areas: "logo copyright";
 }
 
+/* 7. Right-align and vertically center the copyright message in the yellow box. */
 #copyright {
   margin: 0 1rem;
   grid-area: copyright;
+  align-self: center;
+  justify-self: end;
 }
 
 #logo {
