@@ -10,6 +10,14 @@ html {
   color: black;
 }
 
+/* 4. Organize the entire page as a grid of three columns and five lines, with named grid areas. The first and last column should each take up 1/4 of the page width, while the central column should take up 1/2 the page width. Use fractions, not percentages, to designate these measurements. The header should be on the top line, followed by the navigation bar. The content area consists of two lines. The first has two aside elements and an article, with the article in the larger center column. The next line consists of an article and an aside. Lastly, the footer should appear at the bottom of the grid. */
+
+body {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
 header, h1 {
   background-color: blue;
   color: white;
@@ -18,11 +26,13 @@ header, h1 {
 header {
   padding: 1rem;
   text-align: center;
+  grid-area: 1 / 1 / span 1 / span 3;
 }
 
 /* 3. Convert the navigation links into a horizontal navigation bar: */
 nav {
   background-color: cyan;
+  grid-area: 2 / 1 / span 1 / span 3;
 }
 
 ul {
@@ -59,12 +69,26 @@ aside {
   background-color: lightgreen;
 }
 
+#aside-1 {
+  grid-area: 3 / 1;
+}
+
+#aside-2 {
+  grid-area: 3 / 3 / span 1 / span 1;
+}
+
 #aside-3 {
   background-color: pink;
+  grid-area: 4 / 1
+}
+
+#article-1 {
+  grid-area: 3 / 2;
 }
 
 #article-2 {
   background-color: skyblue;
+  grid-area: 4 / 2 / span 1 / span 2;
 }
 
 p {
@@ -73,6 +97,7 @@ p {
 
 footer {
   background-color: yellow;
+  grid-area: 5 / 1 / span 1 / span 3;
 }
 
 #copyright {
