@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #141414;
+  color: #f0f0f0;
+  font: normal 16px Helvetica, Arial, sans-serif
+}
+
+article {
+  box-sizing: border-box;
+  min-width: 500px;
+  max-width: 1000px;
+  background-color: #333;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  margin: 30px auto 20px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+figcaption {
+  margin: 10px 0;
+}
+
+footer {
+  margin-top: 30px;
+  display: flex;
+  align-content: space-between;
+  column-gap: 30px;
+}
+
+img {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 15px solid white;
+}
+
+footer img {
+  flex: 1;
+  border-width: 3px;
+}
