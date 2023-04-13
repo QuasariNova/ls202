@@ -66,3 +66,10 @@ li {
 li img {
   border: 3px solid white;
 }
+
+/* 4. Add a media query with the CSS you need to limit the number of thumbnails per line to three when the window width is less than 900px. */
+@media screen and (max-width: 899px) {
+  li {
+    width: 33.333%;
+  }
+}
