@@ -80,3 +80,34 @@ li img {
     width: 50%;
   }
 }
+
+@media screen and (min-width: 1280px)
+{
+  main {
+    max-width: 100%;
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-template-columns: 950px 1fr;
+  }
+
+  h1 {
+    grid-area: 1 / 1 / 1 / span 2;
+  }
+
+  figure {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  ul {
+    padding-left: 30px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    width: 200px;
+  }
+}
