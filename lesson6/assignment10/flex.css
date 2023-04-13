@@ -53,13 +53,24 @@ a:hover {
   color: yellow;
 }
 
+/* 5. Create three columns of text - an article and two asides - as the main body of the page. The article should consume half the page width, while the asides should each consume one-quarter (that is, the article is twice the width of each aside). Each column should be the same height, no matter how much text it contains. */
+
+main {
+  display: flex;
+}
+
 article,
 aside {
   padding: 0 1rem;
 }
 
+article {
+  flex: 2;
+}
+
 aside {
   background-color: lightgreen;
+  flex: 1;
 }
 
 p {
