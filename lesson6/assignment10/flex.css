@@ -12,11 +12,13 @@ html {
 }
 
 h1 {
-  background-color: blue;
   color: white;
 }
 
+/* 2. Give the header a blue background; the h1 heading has a blue background, but not the header. */
+
 header {
+  background-color: blue;
   padding: 1rem;
   text-align: center;
 }
