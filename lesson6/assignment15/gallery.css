@@ -10,6 +10,7 @@ html {
   font: normal 16px Helvetica, Arial, sans-serif;
 }
 
+/* 2. Remove the minimum width from the project. */
 main {
   background-color: #333;
   color: inherit; /* #f0f0f0 */
@@ -17,7 +18,7 @@ main {
   display: block;
   margin: 0 auto;
   max-width: 1000px;
-  min-width: 500px;
+  /* min-width: 500px; */
   padding: 25px 20px 20px;
 }
 
