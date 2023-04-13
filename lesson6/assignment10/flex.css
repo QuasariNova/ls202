@@ -79,10 +79,12 @@ p {
 
 /* 6. Create a two-column footer with the copyright notice on the left, and the 200px high image on the right. */
 
+/* 7. Swap the positions of the copyright notice and image to place the image on the left and the copyright notice on the right. */
 footer {
   background-color: yellow;
   display: flex;
   justify-content: space-between;
+  /* flex-direction: row-reverse; 7. This is one way of doing it  */
 }
 
 #copyright {
@@ -91,7 +93,7 @@ footer {
 
 #logo {
   background-color: orange;
-  height: 200px;
+  order: -1; /* 7. This is the other */
 }
 
 #logo img {
