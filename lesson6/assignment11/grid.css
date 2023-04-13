@@ -11,7 +11,6 @@ html {
 }
 
 /* 4. Organize the entire page as a grid of three columns and five lines, with named grid areas. The first and last column should each take up 1/4 of the page width, while the central column should take up 1/2 the page width. Use fractions, not percentages, to designate these measurements. The header should be on the top line, followed by the navigation bar. The content area consists of two lines. The first has two aside elements and an article, with the article in the larger center column. The next line consists of an article and an aside. Lastly, the footer should appear at the bottom of the grid. */
-
 body {
   display: grid;
   grid-auto-rows: min-content;
@@ -95,15 +94,20 @@ p {
   margin: 1rem 0;
 }
 
+/* 5. Divide the footer area into a sub-grid that will show the logo on the left and the copyright notice on the right. */
 footer {
   background-color: yellow;
   grid-area: 5 / 1 / span 1 / span 3;
+  display: grid;
+  grid-template-areas: "logo copyright";
 }
 
 #copyright {
   margin: 0 1rem;
+  grid-area: copyright;
 }
 
 #logo {
   background-color: orange;
+  grid-area: logo;
 }
