@@ -73,3 +73,10 @@ li img {
     width: 33.333%;
   }
 }
+
+/* 5. Add a media query with the CSS you need to limit the number of thumbnails per line to two when the window width is less than 600px. */
+@media screen and (max-width: 599px) {
+  li {
+    width: 50%;
+  }
+}
