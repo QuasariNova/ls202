@@ -1,5 +1,4 @@
 /* 2. Start by providing any global settings you think you will need. You can update this later. */
-
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +15,6 @@ h1 {
 }
 
 /* 3. Give the header a blue background; the h1 heading has a blue background, but not the header. */
-
 header {
   background-color: blue;
   padding: 1rem;
@@ -24,7 +22,6 @@ header {
 }
 
 /* 4. Convert the navigation links into a horizontal navigation bar: */
-
 nav {
   background-color: cyan;
 }
@@ -54,7 +51,6 @@ a:hover {
 }
 
 /* 5. Create three columns of text - an article and two asides - as the main body of the page. The article should consume half the page width, while the asides should each consume one-quarter (that is, the article is twice the width of each aside). Each column should be the same height, no matter how much text it contains. */
-
 main {
   display: flex;
 }
@@ -80,15 +76,20 @@ p {
 /* 6. Create a two-column footer with the copyright notice on the left, and the 200px high image on the right. */
 
 /* 7. Swap the positions of the copyright notice and image to place the image on the left and the copyright notice on the right. */
+
+/* 8. Center the copyright notice vertically. */
 footer {
   background-color: yellow;
   display: flex;
   justify-content: space-between;
   /* flex-direction: row-reverse; 7. This is one way of doing it  */
+  align-items: center; /* 8. Answer we are going with */
+  /* align-content: center; 8. This is a way. */
 }
 
 #copyright {
   margin: 0 1rem;
+  /* align-self: center; 8. This is a way too. */
 }
 
 #logo {
