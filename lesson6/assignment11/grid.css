@@ -20,12 +20,15 @@ header {
   text-align: center;
 }
 
+/* 3. Convert the navigation links into a horizontal navigation bar: */
 nav {
   background-color: cyan;
 }
 
 ul {
   list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 li {
