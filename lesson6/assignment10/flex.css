@@ -15,7 +15,7 @@ h1 {
   color: white;
 }
 
-/* 2. Give the header a blue background; the h1 heading has a blue background, but not the header. */
+/* 3. Give the header a blue background; the h1 heading has a blue background, but not the header. */
 
 header {
   background-color: blue;
@@ -23,12 +23,15 @@ header {
   text-align: center;
 }
 
+/* 4. Convert the navigation links into a horizontal navigation bar: */
+
 nav {
   background-color: cyan;
 }
 
 ul {
   list-style-type: none;
+  display: flex;
 }
 
 li {
