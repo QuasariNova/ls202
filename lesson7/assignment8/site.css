@@ -1,12 +1,17 @@
 @import url('whitespace-reset.css');
 
 html {
-  font: normal 20px 'Avenir', 'Nunito', arial, sans-serif;
+  font: normal 20px Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #45494d;
 }
 
 body {
   background-image: url('images/bg_body.gif');
-  color: #2f2840;
+}
+
+header, main, footer, article {
+  box-sizing: border-box;
 }
 
 header {
@@ -21,31 +26,108 @@ header img {
 nav ul {
   justify-content: space-between;
   display: flex;
-  list-style: none;
   width: 430px;
-  margin: 125px auto 0;
+  margin: 120px auto 0;
 }
 
 nav a {
   color: white;
-  font-size: 26px;
-  font-weight: bold;
+  font-size: 1.3rem;
   text-decoration: none;
 }
 
 .selected a {
   color: #6db9ff;
+  font-weight: bold;
 }
 
 main {
   background-color: white;
+  padding-top: 120px;
 }
 
 article {
-  margin: 0 190px;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 90px;
+}
+
+h2 {
+  color: #2f2840;
+  font-size: 1.85rem;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+h3 {
+  color: #3e59b2;
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+p {
+  font-weight: 500;
+  padding-bottom: 70px;
+  line-height: 1.4;
 }
 
 footer {
   background-color: #e7e7e7;
   color: #b6b6b6;
+  padding: 85px 0 75px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 364px;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0 60px;
+}
+
+footer li a {
+  background:
+    transparent
+    url("https://d3jtzah944tvom.cloudfront.net/202/projects/lesson_7/spacedesign/images/icons_social-media.png")
+    0 0 no-repeat;
+  display: block;
+  height: 46px;
+  width: 46px;
+}
+
+footer li:nth-child(2) a {
+  background-position: 0 -46px;
+}
+
+footer li:nth-child(3) a {
+  background-position: 0 -92px;
+}
+
+footer li:nth-child(4) a {
+  background-position: 0 -138px;
+}
+
+#team ul {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 60px 0 210px;
+  width: 740;
+}
+
+#team li img {
+  display: block;
+  margin-bottom: 30px;
+}
+
+#team a {
+  color: #3e59b2;
+  font-size: 24px;
+  text-decoration: none;
 }
